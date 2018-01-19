@@ -1,0 +1,98 @@
+.sender {
+  clear: both
+}
+
+.sender div:nth-of-type(1) {
+  float: left
+}
+
+.sender div:nth-of-type(2) {
+  background-color: #7fffd4;
+  float: left;
+  margin: 0 20px 10px 15px;
+  padding: 10px 10px 10px 0;
+  border-radius: 7px
+}
+
+.receiver div:first-child img,
+.sender div:first-child img {
+  width: 50px;
+  height: 50px
+}
+
+.receiver {
+  clear: both
+}
+
+.receiver div:nth-child(1) {
+  float: right
+}
+
+.receiver div:nth-of-type(2) {
+  float: right;
+  background-color: gold;
+  margin: 0 10px 10px 20px;
+  padding: 10px 0 10px 10px;
+  border-radius: 7px
+}
+
+.left_triangle {
+  height: 0;
+  width: 0;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #7fffd4 transparent transparent;
+  position: relative;
+  left: -16px;
+  top: 3px
+}
+
+.right_triangle {
+  height: 0;
+  width: 0;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent gold;
+  position: relative;
+  right: -16px;
+  top: 3px
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+html,body {
+  background: #ccc;
+  padding: 20px 0 20px 0;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+}
+.login {
+  text-align: center;
+}
+#chatbox {
+  height: 100%;
+}
+#inputgrop {
+  display: block;
+  width: 100%;
+  position: absolute;
+  min-height: 40px;
+  bottom: 0;
+}
+#content {
+  height: auto;
+}
+.alert {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.chatwindow {
+  height: 100%;
+}

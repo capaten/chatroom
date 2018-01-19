@@ -1,0 +1,82 @@
+<div style="display: none;" id="chatbox">
+    <div id="usergroup" class="col-md-2">
+        <span  class="label label-primary" style="font-size: 2em;">在线成员</span>
+        <div class="list-group"></div>
+    </div>
+
+    <div class="col-md-9 chatwindow col-md-offset-1">
+        <div class="alert alert-info alert-dismissible fade in" role="alert" id="myalert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="alert alert-info alert-dismissible fade in" role="alert" id="myalert1">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span></span>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade in" role="alert" id="myalert2">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span></span>
+        </div>
+        <div id="content"></div>
+        <div id="inputgrop">
+            <div class="col-md-10">
+                <input type="text" placeholder="saying somgthing" class="form-control chatinput" id="chatinput">
+            </div>
+            <form action="" style="display: none;" id="resetform"><input type="file" style="display: none" id="imginput"></form>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary" id="imgbutton">发送图片</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 发送模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        模态框（Modal）标题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="say something" class="form-control chatinput" id="inputtoone">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="closesendtoo">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="sendtoo">
+                        发送
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!-- 收到模态框（Modal） -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel1">
+                        模态框（Modal）标题
+                    </h4>
+                </div>
+                <div class="modal-body shoudao">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="closesendtoo">
+                        知道了
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <button id="showmodal" data-toggle="modal" data-target="#myModal1" style="display: none;"></button>
+</div>
